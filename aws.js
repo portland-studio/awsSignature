@@ -125,8 +125,7 @@ function getSignatureKey( key, dateStamp, regionName, serviceName) {
                 'X-Amz-Content-Sha256': hashedPayload
               };
 
-              //var JsonHeaders = JSON.stringify(headers)
-		var JsonHeaders = headers
-			  console.log(JsonHeaders)
+              var JsonHeaders = JSON.stringify(headers)
+	      console.log(JsonHeaders)
               return JsonHeaders;
             }
